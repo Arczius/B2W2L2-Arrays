@@ -1,3 +1,4 @@
+//dit is voor opdracht a
 document.write("<h2>"+ "Alle dagen van de week zijn:" + "</h2>");
 
 var dagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
@@ -29,6 +30,22 @@ document.write("<h2>" +  "Alle dagen van de week in omgekeerde volgorde zijn:" +
 
 document.write("<ul>");
 for(var i = dagen.length -1; i >= 0; i--){
+	document.write("<li>" + dagen[i] + "</li>");
+}
+document.write("</ul>");
+
+document.write("<h2>" + "De werkdagen in omgekeerde volgorde zijn:" + "</h2>");
+
+document.write("<ul>");
+for(var i = dagen.length -3; i >= 0; i--){
+	document.write("<li>" + dagen[i] + "</li>");
+}
+document.write("</ul>");
+
+document.write("<h2>" + "De weekenddagen in omgekeerde volgorde zijn:" + "</h2>");
+
+document.write("<ul>");
+for(var i = dagen.length -1; i >= 5; i--){
 	document.write("<li>" + dagen[i] + "</li>");
 }
 document.write("</ul>");
